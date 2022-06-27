@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 header {
-    background-image: url('../dist/assets/BG.jpg');
+    background-image: url('assets/BG.jpg');
     background-position: center;
     height: 100vh;
 }
