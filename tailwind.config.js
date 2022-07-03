@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'mySans': ['Poppins'],
-      'minecraft': ['Minecraft'],
+      'minecraft': ['"Press Start 2P"'],
     },
     extend: {
       colors: {
