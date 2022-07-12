@@ -14,23 +14,28 @@
     <!-- Header + Nav START -->
      <header>
         <!-- Nav START -->
-        <nav class="flex items-center justify-between max-w-screen-2xl mx-auto pt-10 px-5">
+        <nav class="flex items-center justify-between max-w-screen-2xl mx-auto py-10 bg-myCyan md:px-5 md:bg-transparent">
             <div class="flex items-center justify-between gap-x-16">
-                <a href="index.html">
+                <a class="pl-5 md:pl-0" href="index.html">
                     <img src="assets/Logo.svg" alt="logo">
                 </a>
-                <div class="hidden items-center gap-x-7 text-white font-medium font-mySans md:flex">
-                    <a href="index.html" class="text-myCyan">Home</a>
-                    <a href="vote.html" class="hover:text-myCyan">Vote</a>
-                    <a href="news.html" class="hover:text-myCyan">News</a>
-                    <a href="rules.html" class="hover:text-myCyan">Rules</a>
+                <div id="menuItems" class="hidden pt-5 items-center gap-x-7 text-white font-medium font-mySans z-20 md:pt-0 md:flex">
+                    <a href="index.html" class="text-white md:text-myCyan">Home</a>
+                    <a href="vote.html" class="md:hover:text-myCyan">Vote</a>
+                    <a href="news.html" class="md:hover:text-myCyan">News</a>
+                    <a href="rules.html" class="md:hover:text-myCyan">Rules</a>
                 </div>
             </div>
-            <div class="flex items-center gap-x-7 icons">
+            <div class="hidden items-center gap-x-7 icons md:flex">
                 <a href="#" class="grayscale hover:grayscale-0"><img src="assets/Github.svg" alt="github"></a>
                 <a href="#" class="grayscale hover:grayscale-0"><img src="assets/Reddit.svg" alt="reddit"></a>
                 <a href="#" class="grayscale hover:grayscale-0"><img src="assets/Wikipedia.svg" alt="wikipedia"></a>
                 <a href="#" class="grayscale hover:grayscale-0"><img src="assets/Youtube.svg" alt="youtube"></a>
+            </div>
+            <div id="hamburger" class="h-5 absolute left-[90%] md:hidden">
+                <div id="line1" class="line top-[10%]"></div>
+                <div id="line2" class="line top-[50%]"></div>
+                <div id="line3" class="line top-[90%]"></div>
             </div>
         </nav>
         <!-- Nav END -->
@@ -97,7 +102,7 @@
      <footer>
         <div class="flex flex-wrap items-center justify-between text-white max-w-screen-2xl mx-auto px-5 h-[400px] md:h-[250px]">
             <div class="flex flex-col gap-y-1">
-                <img src="./assets//Logo.png" alt="logo">
+                <img src="./assets/Logo.svg" alt="logo">
                 <p>We are not affiliated with Mojang</p>
                 <p>&copy; 2022 SimplyVanilla</p>
                 <div class="flex items-center grayscale gap-x-3 mt-5">
@@ -128,5 +133,8 @@
         </div>
      </footer>
     <!-- Footer END -->
+
+    <!-- Menu -->
+    <script src="menu.js"></script>
 </body>
 </html>
