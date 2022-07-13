@@ -625,6 +625,10 @@ video {
   margin-left: 2.5rem;
 }
 
+.mt-\[5rem\] {
+  margin-top: 5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -657,6 +661,10 @@ video {
   height: 400px;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .w-40 {
   width: 10rem;
 }
@@ -685,6 +693,10 @@ video {
   max-width: 36rem;
 }
 
+.max-w-4xl {
+  max-width: 56rem;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -699,6 +711,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -731,6 +747,23 @@ video {
 .gap-x-3 {
   -moz-column-gap: 0.75rem;
        column-gap: 0.75rem;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
+.gap-y-7 {
+  row-gap: 1.75rem;
+}
+
+.gap-y-5 {
+  row-gap: 1.25rem;
+}
+
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
 }
 
 .rounded {
@@ -768,6 +801,15 @@ video {
   padding: 1.25rem;
 }
 
+.p-7 {
+  padding: 1.75rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -778,9 +820,12 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .pt-10 {
@@ -789,18 +834,6 @@ video {
 
 .pt-\[20rem\] {
   padding-top: 20rem;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
-}
-
-.pl-3 {
-  padding-left: 0.75rem;
-}
-
-.pl-5 {
-  padding-left: 1.25rem;
 }
 
 .text-center {
@@ -836,6 +869,11 @@ video {
 
 .text-lg {
   font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
@@ -889,6 +927,21 @@ footer {
   background: #050A0A;
 }
 
+/* news */
+
+body.news {
+  min-height: 100vh;
+  background-color: #0B2020;
+}
+
+.transparentBG {
+  background-color: rgb(255,255,255,0.09);
+}
+
+.mainBG {
+  background-color: #143434;
+}
+
 /* hamburger menu */
 
 .line {
@@ -923,6 +976,20 @@ footer {
   width: 100%;
   height: 150px;
   color: #fff;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00C8C8;
 }
 
 .hover\:bg-white:hover {
@@ -966,21 +1033,17 @@ footer {
     background-color: transparent;
   }
 
-  .md\:bg-none {
-    background-image: none;
-  }
-
   .md\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
 
-  .md\:pt-0 {
-    padding-top: 0px;
-  }
-
   .md\:pl-0 {
     padding-left: 0px;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
   }
 
   .md\:text-myCyan {
@@ -1014,6 +1077,14 @@ footer {
 }
 
 @media (min-width: 1280px) {
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:justify-between {
+    justify-content: space-between;
+  }
+
   .xl\:gap-x-40 {
     -moz-column-gap: 10rem;
          column-gap: 10rem;
